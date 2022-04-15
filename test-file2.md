@@ -1,4 +1,4 @@
 # Header
 
-[google](www.google.com)
-[tritonlink](students.ucsd.edu)
+Link to google: [google](www.google.com)
+Link to UCSD: [tritonlink](students.ucsd.edu) enjoy :)
