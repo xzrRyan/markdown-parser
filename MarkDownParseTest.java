@@ -19,6 +19,10 @@ public class MarkdownParseTest{
         ArrayList<String> a = MarkdownParse.getLinks(content);
         ArrayList<String> links = new ArrayList<>(List.of("https://something.com", "some-thing.html"));
         assertEquals(links, a);
+
+        assertEquals("BCD", a);
+
+
     }
 }
 
