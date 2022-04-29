@@ -20,7 +20,7 @@ public class MarkdownParseTest{
         ArrayList<String> links = new ArrayList<>(List.of("https://something.com", "some-thing.html"));
         assertEquals(links, a);
 
-        assertTrue(links.equals(a));
+        assertFalse(links.equals(a));
 
 
     }
