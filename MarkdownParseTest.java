@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class MarkdownParseTest{
     @Test
-    public void addition() throws IOException {
+    public void test1() throws IOException {
         assertEquals(2, 1 + 1);
 
 
@@ -21,7 +21,16 @@ public class MarkdownParseTest{
         assertEquals(links, a);
 
         assertTrue(links.equals(a));
+        
 
+    }
+    @Test
+    public void test2() throws IOException {
+        Path fileName = Path.of("test-file5.md");
+        String content = Files.readString(fileName); 
+        ArrayList<String> a = MarkdownParse.getLinks(content);
+        ArrayList<String> links = new ArrayList<>(List.of("www.google.com"));
+        assertEquals(links, a);
 
     }
 }
